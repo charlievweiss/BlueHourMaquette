@@ -29,7 +29,7 @@ This is the function that calls all the other code, after the arduino has been "
 * tracks time
 * calculates the number of totes (That way, if the number changes while it's running, the stack will still function as desired)
 * reads the input value from the photoresistors
-* updates the maximum amount of light, based on whether the photoresistor value is higher than the current max (**Note: This does not eve decrease, so if you were to shine a bright light at the photoresistors only once, it would assume that was the default light state in the room. This can cause problems because it will assume there is motion at a lower light state, though you may have just turned that light off.**)
+* updates the maximum amount of light, based on whether the photoresistor value is higher than the current max (**Note: This does not ever decrease, so if you were to shine a bright light at the photoresistors only once, it would assume that was the default light state in the room. This can cause problems because it will assume there is motion at a lower light state, though you may have just turned that light off.**)
 * checks for motion by seeing if the light state is lower than the max light state, and sets a boolean to true or false accordingly
 * calls checkAndFade to update the rgb values for the leds in a for loop
 * updates the pixel colors with the new rgb values in a for loop
