@@ -2,7 +2,7 @@
 Code and other relevant files for a maquette of New American Public Art's project, Blue Hour
 
 ## Fade_With_Motion.ino
-This is the code that runs the brain!
+This is the code that runs the brain! In short, it checks the number of totes connected through the brain with resistance, checks the light level from the photoresistors to detect movement, and updates the connected leds accordingly.
 
 It has a few main functions:
 * global variables
