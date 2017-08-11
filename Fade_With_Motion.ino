@@ -51,6 +51,7 @@ void loop() {
   else{
     numberTotes=1;
   }
+  Serial.println(numberTotes);
   //setup for check for motion
   val = analogRead(motionPin); //read input val from photoresistors
   //check for the new max val, since this correlates to the max light in the room
